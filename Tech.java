@@ -5,8 +5,8 @@ public class Tech {
     private double price;
 
     public Tech() {
-        this.color = "gray";
-        this.brand = "apple";
+        this.color = "";
+        this.brand = "";
         this.yearMade = 0;
         this.price = 0.0;
     }
@@ -52,6 +52,6 @@ public class Tech {
 
     @Override
     public String toString() {
-        return "Color:" + getColor() + "\nBrand: " + getBrand() + "\nYear Made: " + getYearMade() + "\nPrice: " + getPrice();
+        return "Color: " + getColor() + "\nBrand: " + getBrand() + "\nYear Made: " + getYearMade() + "\nPrice: " + getPrice();
     }
 }
