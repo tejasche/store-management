@@ -40,4 +40,7 @@ public class Tech {
     public void setPrice(double newPrice) {
         this.price = newPrice;
     }
+    public String toString() {
+        return "Color:" + getColor() + "\nBrand: " + getBrand() + "\nYear Made: " + getYearMade() + "\nPrice: " + getPrice();
+    }
 }
