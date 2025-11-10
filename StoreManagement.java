@@ -1,5 +1,6 @@
 public class StoreManagement {
     public static void main(String[] args){
-        System.out.println("test");
-    }
+        
+        Peripherals peripheral = new Peripherals("gray" , " Logitech" , 2014 , 399.99 , "regular" );
+    }  
 }

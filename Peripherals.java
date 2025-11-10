@@ -23,4 +23,9 @@ public class Peripherals extends Tech {
     public void setPeripharelType(String peripharelType) {
         this.peripharelType = peripharelType;
     }
+    
+    //To string method
+    public String toString(){
+        return super.toString() + "\nperipherelType" + this.peripharelType();
+    }
 }
