@@ -16,5 +16,28 @@ public class Tech {
         this.yearMade = yearMade;
         this.price = price;
     }
-    
+    public String getColor() {
+        return color;
+    }
+    public String getBrand() {
+        return brand;
+    }
+    public int getYearMade() {
+        return yearMade;
+    }
+    public double getPrice() {
+        return price;
+    }
+    public void setColor(String newColor) {
+        this.color = newColor;
+    }
+    public void setBrand(String newBrand) {
+        this.brand = newBrand;
+    }
+    public void setYearMade(int newYearMade) {
+        this.yearMade = newYearMade;
+    }
+    public void setPrice(double newPrice) {
+        this.price = newPrice;
+    }
 }
