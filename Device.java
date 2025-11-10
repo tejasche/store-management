@@ -4,12 +4,8 @@ public class Device extends Tech {
 
     public Device() {
         this.deviceType = "";
+        this.hasCellular = false;
     }
-
-    public Device() {
-        this.hasCellular = "False";
-    }
-
 
     public Device(String deviceType) {
         this.deviceType = deviceType;
