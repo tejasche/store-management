@@ -49,7 +49,8 @@ public class Tech {
     public void setPrice(double newPrice) {
         this.price = newPrice;
     }
-    
+
+    @Override
     public String toString() {
         return "Color:" + getColor() + "\nBrand: " + getBrand() + "\nYear Made: " + getYearMade() + "\nPrice: " + getPrice();
     }
