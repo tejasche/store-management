@@ -25,7 +25,22 @@ public class Commandline {
                         objects.add(name);
                         System.out.println("Device \"" + name + "\" added@");
                         break;
+
+
+                        case 2:
+                    if (objects.isEmpty()) {
+                        System.out.println("No devices found.");
+                    } else {
+                        System.out.println("Devices:");
+                        for (int i = 0; i < objects.size(); i++) {
+                            System.out.println((i + 1) + ". " + objects.get(i));
+                        }
+                    }
+                    break;
+
+                    
                 }
+
 
             }
        
