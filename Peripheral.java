@@ -7,11 +7,10 @@ public class Peripheral extends Tech {
       
     }
 
-    // parameterized constructer
-    public Peripheral(String color , String brand , int yearMade , double price , String peripharelType) {
-        super(color , brand , yearMade , price );
-        this.peripheralType = peripharelType;
-
+    // parameterized constructor
+    public Peripheral(String color, String brand, int yearMade, double price, String peripheralType) {
+        super(color, brand, yearMade, price);
+        this.peripheralType = peripheralType;
     }
 
     //getter
