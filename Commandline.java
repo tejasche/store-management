@@ -38,7 +38,27 @@ public class Commandline {
                     }
                     break;
 
-                    
+                    case 3:
+                    if (objects.isEmpty()) {
+                        System.out.println("No devices to delete.");
+                    } else {
+                        System.out.println("Enter the number of the device to delete:");
+                        for (int i = 0; i < objects.size(); i++) {
+                            System.out.println((i + 1) + ". " + objects.get(i));
+                        }
+
+                        int index = input.nextInt();
+                        input.nextLine();
+
+                        if (index > 0 && index <= objects.size()) {
+                            String removed = objects.remove(index - 1);
+                            System.out.println("Device \"" + removed + "\" deleted.");
+                        } else {
+                            System.out.println("Invalid selection.");
+                        }
+                    }
+                    break;
+
                 }
 
 
