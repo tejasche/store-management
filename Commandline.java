@@ -16,7 +16,9 @@ public class Commandline {
         //list object code
     }
     if (userDesire == 3) {
-        //delete object code
+        System.out.println("What object do you want to delet? ");
+        deletedObject = input.next();
+        LISTNAME.delete(deletedObject);
     }
 
     }
