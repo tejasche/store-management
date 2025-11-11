@@ -24,6 +24,7 @@ public class Peripheral extends Tech {
     }
     
     //To string method
+    @Override
     public String toString() {
         return super.toString() + "\nPeripheral Type: " + this.peripheralType;
     }
