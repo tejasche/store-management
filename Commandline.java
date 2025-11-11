@@ -10,13 +10,16 @@ public class Commandline {
     int userDesire = input.nextInt();
     if (userDesire == 1) {
         //Add object code
-
+        System.out.println("which object would you like to add?");
+        String addedObject = input.next();
+        LISTNAME.add(addedObject);
     }
     if (userDesire == 2) {
         //list object code
     }
     if (userDesire == 3) {
         //delete object code
+        
     }
 
     }
