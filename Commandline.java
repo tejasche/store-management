@@ -14,6 +14,19 @@ public class Commandline {
                 System.out.println("3. Delete a device");
                 System.out.println("4. Exit");
                 System.out.print("Enter choice: ");
+
+                int choice = input.nextInt();
+                input.nextLine();
+
+                switch (choice) {
+                    case 1:
+                        System.out.print("Input device name: ");
+                        String name = input.nextLine();
+                        objects.add(name);
+                        System.out.println("Device \"" + name + "\" added@");
+                        break;
+                }
+
             }
        
     }
