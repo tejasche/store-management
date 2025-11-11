@@ -1,10 +1,9 @@
 public class Peripheral extends Tech {
     private String peripheralType;
 
-    // non parameterized constructer
+    // non parameterized constructor
     public Peripheral() {
         this.peripheralType = "";
-      
     }
 
     // parameterized constructor
