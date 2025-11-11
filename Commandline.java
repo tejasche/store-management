@@ -17,7 +17,7 @@ public class Commandline {
     }
     if (userDesire == 3) {
         System.out.println("What object do you want to delet? ");
-        deletedObject = input.next();
+        String deletedObject = input.next();
         LISTNAME.delete(deletedObject);
     }
 
