@@ -1,11 +1,9 @@
-
-import java.util.Scanner;
-
 public class StoreManagement {
     public static void main(String[] args){
-        
-        Peripheral peripheral = new Peripheral();
-        System.out.println(peripheral);
+        CommandLine cli = new CommandLine();
+        cli.commandLine();
+        // Peripheral peripheral = new Peripheral();
+        // System.out.println(peripheral);
     
     }  
 }

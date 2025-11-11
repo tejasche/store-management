@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Commandline {
+public class CommandLine {
     private ArrayList<String> objects = new ArrayList<>();
 
     public void commandLine() {
@@ -59,10 +59,13 @@ public class Commandline {
                     }
                     break;
 
+                    case 4: 
+                        running = false;
+                        System.out.println("Program exited.");
+                        break;
+
                 }
-
-
             }
-       
-    }
+            input.close();
+        }
 }
