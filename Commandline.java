@@ -1,23 +1,15 @@
-
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Commandline {
-    public void commandLine(){
-    
-    
-    Scanner input = new Scanner(System.in);
-    System.out.println("1: Add an Object\n2: List an Object\n3: Delete an Object");
-    int userDesire = input.nextInt();
-    if (userDesire == 1) {
-        //Add object code
+    private ArrayList<String> objects = new ArrayList<>();
 
-    }
-    if (userDesire == 2) {
-        //list object code
-    }
-    if (userDesire == 3) {
-        //delete object code
-    }
-
+    public void commandLine() {
+        Scanner input = new Scanner(System.in);
+        boolean running = true;
+            while(running) {
+                System.out.println("Device manager");
+            }
+       
     }
 }
