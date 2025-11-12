@@ -21,26 +21,27 @@ public class Device extends Tech {
         this.architectureType = architectureType;
     }
     
-    //getter for architecture
+    //getter
     public String getArchitectureType() {
         return architectureType;
     }
 
-    //setter for architecture
+    //setter
     public void setArchitectureType(String architectureType) {
         this.architectureType = architectureType;
     }
 
-    //getter for hasBattery
+    //getter
     public Boolean getHasCellular() {
         return hasCellular;
     }
 
-    //setter for hasBattery
+    //setter
     public void setHasBattery(Boolean hasBattery) {
         this.hasCellular = hasBattery;
     }
 
+    //to string method
     @Override
     public String toString() {
         return super.toString() + "\nArchitecture Type: " + getArchitectureType() + "\nHas Cellular: " + getHasCellular();
