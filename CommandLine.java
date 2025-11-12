@@ -15,8 +15,8 @@ public class CommandLine {
                 //Add object code
                 System.out.println("Would you like to create a peripheral or a device? ");
                 String whichObject = input.next();
-                whichObject.strip();
-                whichObject.toLowerCase();
+                whichObject = whichObject.strip();
+                whichObject = whichObject.toLowerCase();
 
                 System.out.println("What is the name of this device? ");
                 String name = input.next();
@@ -59,7 +59,16 @@ public class CommandLine {
                 }
             }
             else if (userChoice == 2) {
-                //list object code
+                if (objects.isEmpty()) {
+                    System.out.println("No devices found.");
+                }
+                else {
+                    System.out.println("Items:");
+                    int i = 1;
+                    for (Object object : objects) {
+                        System.out.println((i++) + ". " + object.toString());
+                    }
+                }
             }
             else if (userChoice == 3) {
                 System.out.println("What object do you want to delete? ");
