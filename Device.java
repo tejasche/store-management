@@ -4,11 +4,19 @@ public class Device extends Tech {
 
     public Device() {
         this.architectureType = "";
-        this.hasCellular = false;
+        this.hasCellular = false; 
     }
+
+
 
     public Device(String color, String brand, int yearMade, double price, String architectureType, boolean hasCellular) {
         super(color, brand, yearMade, price);
+        this.architectureType = architectureType;
+        this.hasCellular = hasCellular;
+    }
+    
+    public Device(String architectureType, boolean hasCellular) {
+        
         this.architectureType = architectureType;
         this.hasCellular = hasCellular;
     }
