@@ -31,11 +31,22 @@ public class CommandLine {
                 double price = input.nextDouble();
 
                 if (whichObject.equals("peripheral")){
-                    System.out.println("What is the device type? ");
+                    System.out.println("What is the peripheral type (ex: mouse, keyboard)? ");
                     String deviceType = input.next();
 
-                    System.out.println("Does this device have cellular? ");
+                    Peripheral peripheral = new Peripheral(color, brand, year, price, deviceType);
+                    objects.add(peripheral);
+                }
+
+                if (whichObject.equals("device")){
+                    System.out.println("What is the device type (ex: phone, laptop)? ");
+                    String deviceType = input.next();
+
+                    System.out.println("Does this device have cellular connectivity? ");
                     Boolean hasCellular = input.nextBoolean();
+
+                    Device device = new Device(color, brand, year, price, deviceType, hasCellular);
+                    objects.add(device);
                 }
             }
             else if (userChoice == 2) {

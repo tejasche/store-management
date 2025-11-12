@@ -7,8 +7,9 @@ public class Device extends Tech {
         this.hasCellular = false;
     }
 
-    public Device(String deviceType) {
+    public Device(String deviceType, boolean hasCellular) {
         this.deviceType = deviceType;
+        this.hasCellular = hasCellular;
     }
 
     public Device(Boolean hasCellular) {
