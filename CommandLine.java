@@ -30,25 +30,28 @@ public class CommandLine {
                 System.out.println("What is the price of this device? ");
                 double price = input.nextDouble();
 
+                System.out.println("What type of device is this (ex: phone, mouse, laptop, keyboard? ");
+                String deviceType = input.next();
+
                 if (whichObject.equals("peripheral")){
-                    System.out.println("What is the peripheral type (ex: mouse, keyboard)? ");
+                    System.out.println("What is the connection type (ex: USB, Bluetooth)? ");
                     String peripheralType = input.next();
 
                     System.out.println("Does this device have battery? ");
-                    String hasBattery = input.next();
+                    boolean hasBattery = input.nextBoolean();
 
-                    Peripheral peripheral = new Peripheral(color, brand, year, price, peripheralType, hasBattery);
+                    Peripheral peripheral = new Peripheral(color, brand, year, price, deviceType, peripheralType, hasBattery);
                     objects.add(peripheral);
                 }
 
                 if (whichObject.equals("device")){
-                    System.out.println("What is the device type (ex: phone, laptop)? ");
-                    String deviceType = input.next();
+                    System.out.println("What is the architecture type (ex: arm, x64)? ");
+                    String architectureType = input.next();
 
                     System.out.println("Does this device have cellular connectivity? ");
-                    Boolean hasCellular = input.nextBoolean();
+                    boolean hasCellular = input.nextBoolean();
 
-                    Device device = new Device(color, brand, year, price, deviceType, hasCellular);
+                    Device device = new Device(color, brand, year, price, deviceType, architectureType, hasCellular);
                     objects.add(device);
                 }
             }

@@ -10,7 +10,7 @@ public class Device extends Tech {
 
 
     public Device(String color, String brand, int yearMade, double price, String architectureType, boolean hasCellular) {
-        super(color, brand, yearMade, price);
+        super(color, brand, yearMade, price, type);
         this.architectureType = architectureType;
         this.hasCellular = hasCellular;
     }

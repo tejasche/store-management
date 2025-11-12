@@ -1,21 +1,27 @@
 public class Tech {
+    private String name;
     private String color;
     private String brand;
     private int yearMade;
     private double price;
+    private String type;
 
     public Tech() {
+        this.name = "";
         this.color = "";
         this.brand = "";
         this.yearMade = 0;
         this.price = 0.0;
+        this.type = "";
     }
 
-    public Tech(String color, String brand, int yearMade, double price) {
+    public Tech(String name, String color, String brand, int yearMade, double price, String type) {
+        this.name = name;
         this.color = color;
         this.brand = brand;
         this.yearMade = yearMade;
         this.price = price;
+        this.type = type;
     }
 
     public String getColor() {

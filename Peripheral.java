@@ -8,15 +8,15 @@ public class Peripheral extends Tech {
         this.hasBattery = false;
     }
     //parameterized contructor
-     public Peripheral(String color, String brand, int yearMade, double price, String connectionType, boolean hasBattery) {
-        super(color, brand, yearMade, price);
+     public Peripheral(String name, String color, String brand, int yearMade, double price, String type, String connectionType, boolean hasBattery) {
+        super(name, color, brand, yearMade, price, type);
         this.connectionType = connectionType;
         this.hasBattery = hasBattery;
     }
     // parameterized constructor
-    public Peripheral(String connectionType, boolean hasBattery) {
+    public Peripheral(String name, String color, String brand, int yearMade, double price, String type, String connectionType) {
+        super(name, color, brand, yearMade, price, type);
         this.connectionType = connectionType;
-        this.hasBattery = hasBattery;
     }
 
     //getter
@@ -28,11 +28,13 @@ public class Peripheral extends Tech {
     public void setConnectionType(String connectionType) {
         this.connectionType = connectionType;
     }
-//getter
+
+    //getter
     public boolean getHasBattery() {
         return hasBattery;
     }
-//getter
+
+    //getter
     public void setHasBattery(boolean hasBattery) {
         this.hasBattery = hasBattery;
     }
