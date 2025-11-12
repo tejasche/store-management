@@ -1,18 +1,24 @@
 public class Device extends Tech {
     private String architectureType;
-    private boolean hasBattery;
+    private boolean hasCellular;
 
     //non paramatarized constructor
     public Device() {
         this.architectureType = "";
-        this.hasBattery = false;
+        this.hasCellular = false;
     }
 
     //paramatarized constructor 1
-    public Device(String color, String brand, int yearMade, double price, String architectureType, boolean hasBattery) {
+    public Device(String color, String brand, int yearMade, double price, String architectureType, boolean hasCellular) {
         super(color, brand, yearMade, price);
         this.architectureType = architectureType;
-        this.hasBattery = hasBattery;
+        this.hasCellular = hasCellular;
+    }
+    
+    public Device(String architectureType, boolean hasCellular) {
+        
+        this.architectureType = architectureType;
+        this.hasCellular = hasCellular;
     }
 
     //paramatarized constructor 2
@@ -32,17 +38,17 @@ public class Device extends Tech {
     }
 
     //getter for hasBattery
-    public Boolean getHasBattery() {
-        return hasBattery;
+    public Boolean getHasCellular() {
+        return hasCellular;
     }
 
     //setter for hasBattery
     public void setHasBattery(Boolean hasBattery) {
-        this.hasBattery = hasBattery;
+        this.hasCellular = hasBattery;
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nArchitecture Type: " + getArchitectureType() + "\nHas Battery: " + getHasBattery();
+        return super.toString() + "\nArchitecture Type: " + getArchitectureType() + "\nHas Cellular: " + getHasCellular();
     }
 }
