@@ -1,14 +1,15 @@
 public class Device extends Tech {
-    private String deviceType;
+    private String architectureType;
     private boolean hasCellular;
 
     public Device() {
-        this.deviceType = "";
+        this.architectureType = "";
         this.hasCellular = false;
     }
 
-    public Device(String deviceType, boolean hasCellular) {
-        this.deviceType = deviceType;
+    public Device(String color, String brand, int yearMade, double price, String architectureType, boolean hasCellular) {
+        super(color, brand, yearMade, price);
+        this.architectureType = architectureType;
         this.hasCellular = hasCellular;
     }
 
@@ -16,12 +17,12 @@ public class Device extends Tech {
         this.hasCellular = hasCellular;
     }
     
-    public String getDeviceType() {
-        return deviceType;
+    public String getArchitectureType() {
+        return architectureType;
     }
 
-    public void setDeviceType(String newDeviceType) {
-        this.deviceType = newDeviceType;
+    public void setArchitectureType(String architectureType) {
+        this.architectureType = architectureType;
     }
 
     public Boolean getHasCellular() {

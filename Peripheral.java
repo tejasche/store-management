@@ -23,11 +23,11 @@ public class Peripheral extends Tech {
     public void setConnectionType(String connectionType) {
         this.connectionType = connectionType;
     }
-
+//getter
     public boolean getHasBattery() {
         return hasBattery;
     }
-
+//getter
     public void setHasBattery(boolean hasBattery) {
         this.hasBattery = hasBattery;
     }
