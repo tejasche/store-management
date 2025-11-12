@@ -7,7 +7,12 @@ public class Peripheral extends Tech {
         this.connectionType = "";
         this.hasBattery = false;
     }
-
+    //parameterized contructor
+     public Peripheral(String color, String brand, int yearMade, double price, String connectionType, boolean hasBattery) {
+        super(color, brand, yearMade, price);
+        this.connectionType = connectionType;
+        this.hasBattery = hasBattery;
+    }
     // parameterized constructor
     public Peripheral(String connectionType, boolean hasBattery) {
         this.connectionType = connectionType;
