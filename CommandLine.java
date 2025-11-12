@@ -13,35 +13,39 @@ public class CommandLine {
             int userChoice = input.nextInt();
 
             if (userChoice == 1) {
-                //Add object code
-                System.out.println("Would you like to create a peripheral or a device? ");
-                String whichObject = input.next();
-                whichObject = whichObject.strip();
-                whichObject = whichObject.toLowerCase();
+                String whichObject = "";
 
-                System.out.println("What is the name of this device? ");
+                while (true) {
+                    System.out.println("Would you like to create a peripheral or a device? ");
+                    whichObject = input.next().toLowerCase();
+
+                    if (whichObject.equals("peripheral") || whichObject.equals("device")) break;
+                    System.out.println("Errror, type peripheral or device.");
+                }
+
+                System.out.println("What is the name of this item? ");
                 String name = input.next();
 
-                System.out.println("What color is this device? ");
+                System.out.println("What color is this item? ");
                 String color = input.next();
 
-                System.out.println("What brand is this device? ");
+                System.out.println("What brand is this item? ");
                 String brand = input.next();
 
-                System.out.println("What year was this device made in? ");
+                System.out.println("What year was this item made in? ");
                 int year = input.nextInt();
 
-                System.out.println("What is the price of this device? ");
+                System.out.println("What is the price of this item? ");
                 double price = input.nextDouble();
 
-                System.out.println("What type of device is this (ex: phone, mouse, laptop, keyboard? ");
+                System.out.println("What type of item is this (ex: phone, mouse, laptop, keyboard? ");
                 String deviceType = input.next();
 
                 if (whichObject.equals("peripheral")){
                     System.out.println("What is the connection type (ex: USB, Bluetooth)? ");
                     String peripheralType = input.next();
 
-                    System.out.println("Does this device have battery? ");
+                    System.out.println("Does this device have battery, true or false? ");
                     boolean hasBattery = input.nextBoolean();
 
                     Peripheral peripheral = new Peripheral(name, color, brand, year, price, deviceType, peripheralType, hasBattery);
@@ -52,7 +56,7 @@ public class CommandLine {
                     System.out.println("What is the architecture type (ex: arm, x64)? ");
                     String architectureType = input.next();
 
-                    System.out.println("Does this device have cellular connectivity? ");
+                    System.out.println("Does this device have cellular connectivity, true or false? ");
                     boolean hasCellular = input.nextBoolean();
 
                     Device device = new Device(name, color, brand, year, price, deviceType, architectureType, hasCellular);
@@ -74,8 +78,8 @@ public class CommandLine {
             }
             else if (userChoice == 3) {
                 System.out.println("What object do you want to delete? ");
-                String deletedObject = input.next();
-                objects.remove(deletedObject);
+                int index = input.nextInt();
+                objects.remove(index - 1);
             }
             else if (userChoice == 4) {
                 System.out.println("Bye!");
