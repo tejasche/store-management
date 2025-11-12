@@ -48,28 +48,28 @@ public class Tech {
         return type;
     }
 
-    public void setName(String newName) {
-        this.name = newName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setColor(String newColor) {
-        this.color = newColor;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public void setBrand(String newBrand) {
-        this.brand = newBrand;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public void setYearMade(int newYearMade) {
-        this.yearMade = newYearMade;
+    public void setYearMade(int yearMade) {
+        this.yearMade = yearMade;
     }
 
-    public void setPrice(double newPrice) {
-        this.price = newPrice;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public void setType(String newType) {
-        this.name = newType;
+    public void setType(String type) {
+        this.name = type;
     }
  
 
