@@ -1,6 +1,6 @@
 public class Device extends Tech {
     private String architectureType;
-    private boolean hasBattery;
+    private boolean hasCellular;
 
     public Device() {
         this.architectureType = "";
@@ -9,10 +9,10 @@ public class Device extends Tech {
 
 
 
-    public Device(String color, String brand, int yearMade, double price, String architectureType, boolean hasBattery) {
+    public Device(String color, String brand, int yearMade, double price, String architectureType, boolean hasCellular) {
         super(color, brand, yearMade, price);
         this.architectureType = architectureType;
-        this.hasBattery = hasBattery;
+        this.hasCellular = hasCellular;
     }
     
     public Device(String architectureType, boolean hasCellular) {
@@ -34,16 +34,16 @@ public class Device extends Tech {
         this.architectureType = architectureType;
     }
 
-    public Boolean getHasBattery() {
-        return hasBattery;
+    public Boolean getHasCellular() {
+        return hasCellular;
     }
 
-    public void setHasBattery(Boolean hasBattery) {
-        this.hasBattery = hasBattery;
+    public void setHasCellular(Boolean hasCellular) {
+        this.hasCellular = hasCellular;
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nArchitecture Type: " + getArchitectureType() + "\nHas Battery: " + getHasBattery();
+        return super.toString() + "\nArchitecture Type: " + getArchitectureType() + "\nHas Cellular: " + getHasCellular();
     }
 }
