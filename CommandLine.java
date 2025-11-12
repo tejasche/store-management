@@ -32,9 +32,12 @@ public class CommandLine {
 
                 if (whichObject.equals("peripheral")){
                     System.out.println("What is the peripheral type (ex: mouse, keyboard)? ");
-                    String deviceType = input.next();
+                    String peripheralType = input.next();
 
-                    Peripheral peripheral = new Peripheral(color, brand, year, price, deviceType);
+                    System.out.println("Does this device have battery? ");
+                    String hasBattery = input.next();
+
+                    Peripheral peripheral = new Peripheral(color, brand, year, price, peripheralType, hasBattery);
                     objects.add(peripheral);
                 }
 
