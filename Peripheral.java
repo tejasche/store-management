@@ -42,6 +42,6 @@ public class Peripheral extends Tech {
     //to string method
     @Override
     public String toString() {
-        return super.toString() + "\nConnection Type: " + getConnectionType() + "\nHas Battery: " + getHasBattery();
+        return "Peripheral " + super.toString() + "\nConnection Type: " + getConnectionType() + "\nHas Battery: " + getHasBattery();
     }
 }

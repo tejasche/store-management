@@ -6,9 +6,10 @@ public class CommandLine {
     public void runCommandLine(){
         ArrayList<Object> objects = new ArrayList<>();
         Scanner input = new Scanner(System.in);
+        System.out.println("Tech Store Management");
 
         while (true){
-            System.out.println("\n1: Add an Object\n2: List an Object\n3: Delete an Object\n4: Quit");
+            System.out.println("\nOptions:\n1: Add an Object\n2: List an Object\n3: Delete an Object\n4: Quit");
             int userChoice = input.nextInt();
 
             if (userChoice == 1) {
@@ -66,6 +67,7 @@ public class CommandLine {
                     System.out.println("Items:");
                     int i = 1;
                     for (Object object : objects) {
+                        System.out.println();
                         System.out.println((i++) + ". " + object.toString());
                     }
                 }

@@ -44,6 +44,6 @@ public class Device extends Tech {
     //to string method
     @Override
     public String toString() {
-        return super.toString() + "\nArchitecture Type: " + getArchitectureType() + "\nHas Cellular: " + getHasCellular();
+        return "Device " + super.toString() + "\nArchitecture Type: " + getArchitectureType() + "\nHas Cellular: " + getHasCellular();
     }
 }
