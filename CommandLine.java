@@ -74,5 +74,6 @@ public class CommandLine {
                 System.out.println("Invalid choice. Try again.");
             }
         }
+        input.close();
     }
 }
