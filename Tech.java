@@ -24,6 +24,10 @@ public class Tech {
         this.type = type;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public String getColor() {
         return color;
     }
@@ -38,6 +42,14 @@ public class Tech {
 
     public double getPrice() {
         return price;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
     }
 
     public void setColor(String newColor) {
@@ -56,8 +68,13 @@ public class Tech {
         this.price = newPrice;
     }
 
+    public void setType(String newType) {
+        this.name = newType;
+    }
+ 
+
     @Override
     public String toString() {
-        return "Color: " + getColor() + "\nBrand: " + getBrand() + "\nYear Made: " + getYearMade() + "\nPrice: " + getPrice();
+        return "\nName:" + getName() + "\nColor: " + getColor() + "\nBrand: " + getBrand() + "\nYear Made: " + getYearMade() + "\nPrice: " + getPrice() + "\nType: " + getType();
     }
 }
