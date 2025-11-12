@@ -18,6 +18,9 @@ public class CommandLine {
                 whichObject.strip();
                 whichObject.toLowerCase();
 
+                System.out.println("What is the name of this device? ");
+                String name = input.next();
+
                 System.out.println("What color is this device? ");
                 String color = input.next();
 
@@ -40,7 +43,7 @@ public class CommandLine {
                     System.out.println("Does this device have battery? ");
                     boolean hasBattery = input.nextBoolean();
 
-                    Peripheral peripheral = new Peripheral(color, brand, year, price, deviceType, peripheralType, hasBattery);
+                    Peripheral peripheral = new Peripheral(name, color, brand, year, price, deviceType, peripheralType, hasBattery);
                     objects.add(peripheral);
                 }
 
@@ -51,7 +54,7 @@ public class CommandLine {
                     System.out.println("Does this device have cellular connectivity? ");
                     boolean hasCellular = input.nextBoolean();
 
-                    Device device = new Device(color, brand, year, price, deviceType, architectureType, hasCellular);
+                    Device device = new Device(name, color, brand, year, price, deviceType, architectureType, hasCellular);
                     objects.add(device);
                 }
             }

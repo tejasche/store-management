@@ -9,21 +9,15 @@ public class Device extends Tech {
     }
 
     //paramatarized constructor 1
-    public Device(String color, String brand, int yearMade, double price, String architectureType, boolean hasCellular) {
-        super(color, brand, yearMade, price, type);
-        this.architectureType = architectureType;
-        this.hasCellular = hasCellular;
-    }
-    
-    public Device(String architectureType, boolean hasCellular) {
-        
+    public Device(String name, String color, String brand, int yearMade, double price, String type, String architectureType, boolean hasCellular) {
+        super(name, color, brand, yearMade, price, type);
         this.architectureType = architectureType;
         this.hasCellular = hasCellular;
     }
 
     //paramatarized constructor 2
-    public Device(String name, String brand, int year, double price, String architectureType) {
-        super(name, brand, year, price);
+    public Device(String name, String color, String brand, int year, double price, String type, String architectureType) {
+        super(name, color, brand, year, price, type);
         this.architectureType = architectureType;
     }
     
