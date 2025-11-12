@@ -2,18 +2,18 @@ public class Peripheral extends Tech {
     private String connectionType;
     private boolean hasBattery;
 
-    // non parameterized constructor
+    //non parameterized constructor
     public Peripheral() {
         this.connectionType = "";
         this.hasBattery = false;
     }
-    //parameterized contructor
+    //parameterized contructor 1
      public Peripheral(String name, String color, String brand, int yearMade, double price, String type, String connectionType, boolean hasBattery) {
         super(name, color, brand, yearMade, price, type);
         this.connectionType = connectionType;
         this.hasBattery = hasBattery;
     }
-    // parameterized constructor
+    //parameterized constructor 2
     public Peripheral(String name, String color, String brand, int yearMade, double price, String type, String connectionType) {
         super(name, color, brand, yearMade, price, type);
         this.connectionType = connectionType;
@@ -39,7 +39,7 @@ public class Peripheral extends Tech {
         this.hasBattery = hasBattery;
     }
     
-    //To string method
+    //to string method
     @Override
     public String toString() {
         return super.toString() + "\nConnection Type: " + getConnectionType() + "\nHas Battery: " + getHasBattery();
