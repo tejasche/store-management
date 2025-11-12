@@ -7,8 +7,8 @@ public class CommandLine {
     public void commandLine() {
         Scanner input = new Scanner(System.in);
         boolean running = true;
-            while(running) {  
-                System.out.println("\n=== Device Manager ===");
+            while(running) {
+                System.out.println("=== Device Manager ===");
                 System.out.println("1. Add new device");
                 System.out.println("2. List all devices");
                 System.out.println("3. Delete a device");
@@ -23,7 +23,7 @@ public class CommandLine {
                         System.out.print("Input device name: ");
                         String name = input.nextLine();
                         objects.add(name);
-                        System.out.println("Device \"" + name + "\" added@");
+                        System.out.println("Device \"" + name + "\" added");
                         break;
 
 
@@ -67,5 +67,7 @@ public class CommandLine {
                 }
             }
             input.close();
+
+            
         }
 }
